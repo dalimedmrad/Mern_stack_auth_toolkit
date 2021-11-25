@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+
+/* body {
+    background-color: #f3f6fd;
+    font-size: 11.5px;
+    font-weight: bold;
+    color: rgb(189, 196, 203)
+} */
+.bod{
+    background-color: rgb(29, 28, 28);
+    font-size: 12.5px;
+    font-weight: bold;
+    color: rgb(189, 196, 203)
+}
+/* caroussel */
+  .containera {
+    position: relative;
+    width: 320px;
+    margin: 0 auto 8% auto;
+    padding-top: 6%;
+    perspective: 1000px;
+    height: 300px;
+  }
+  .carousel {
+    position: absolute;
+    width: 100%;
+    transform-style: preserve-3d; 
+    animation: rotate360 60s infinite forwards linear;
+  }
+  .carousel__face { 
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
+    display: flex;
+  }
+  
+  .spana {
+    margin: auto;
+    font-size: 2rem;
+  }
+  .carousel__face:nth-child(1) {
+    background-image: url("https://images.unsplash.com/photo-1522211988038-6fcbb8c12c7e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bGlicmFyeXxlbnwwfDB8MHxibGFja3w%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    transform: rotateY(  0deg) translateZ(430px); }
+  .carousel__face:nth-child(2) { 
+    background-image: url("https://images.unsplash.com/photo-1616078202167-29d2a57f3575?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGxpYnJhcnl8ZW58MHwwfDB8YmxhY2t8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+      transform: rotateY( 40deg) translateZ(430px); }
+  .carousel__face:nth-child(3) {
+    background-image: url("https://images.unsplash.com/photo-1618316224214-a5bac0651def?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjB8fGxpYnJhcnl8ZW58MHwwfDB8YmxhY2t8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    transform: rotateY( 80deg) translateZ(430px); }
+  .carousel__face:nth-child(4) {
+    background-image: url("https://images.unsplash.com/photo-1590417963354-3573e1e2b59b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTIxfHxsaWJyYXJ5fGVufDB8MHwwfGJsYWNrfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    transform: rotateY(120deg) translateZ(430px); }
+  .carousel__face:nth-child(5) { 
+    background-image: url("https://images.unsplash.com/photo-1585055462747-0bbcbd0e2167?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGJvb2t8ZW58MHwwfDB8YmxhY2t8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60https://images.pexels.com/photos/969679/pexels-photo-969679.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+   transform: rotateY(160deg) translateZ(430px); }
+  .carousel__face:nth-child(6) { 
+    background-image: url("https://images.unsplash.com/photo-1620217852034-d045f05ec5e8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDh8fGJvb2t8ZW58MHwwfDB8YmxhY2t8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+   transform: rotateY(200deg) translateZ(430px); }
+  .carousel__face:nth-child(7) { 
+    background-image: url("https://images.unsplash.com/photo-1609877991923-98a059340145?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njh8fGJvb2t8ZW58MHwwfDB8YmxhY2t8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+   transform: rotateY(240deg) translateZ(430px); }
+  .carousel__face:nth-child(8) {
+    background-image: url("https://images.unsplash.com/photo-1617932213915-509777a919f3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODJ8fGJvb2t8ZW58MHwwfDB8YmxhY2t8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    transform: rotateY(280deg) translateZ(430px); }
+  .carousel__face:nth-child(9) {
+    background-image: url("https://images.unsplash.com/photo-1522008250122-19c4add9df75?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTExfHxyZWFkfGVufDB8MHwwfGJsYWNrfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    transform: rotateY(320deg) translateZ(430px); }
+  
+  @keyframes rotate360 {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-360deg);
+    }
+  }
+
+  .ya2{
+    display: flex;
+    flex-direction: row;
+    height: 460px;
+    }   
+  .satal1{
+    background-color: #16151a;
+    flex: 1;
+    width: 50%;
+  }     
+  /* jilbert pic */
+  .satal2{
+    flex: 1;
+    width: 50%;
+    height: 100%;
+    
+  }
+  .ya3{
+    height: 570px;
+    display: flex;
+    flex-direction: row;
+  }  
+  /* annie pic */
+  .satal3{
+    flex: 1;
+    width: 50%;
+    height: 100%;
+    background-image: url(annie.jpg);
+    object-fit: cover;
+    border-radius: 25px;
+    overflow: hidden;
+    
+  }
+  .satal4{
+  background-color: #16151a;
+  flex: 1;
+  width: 50%;
+  padding: 1.2em;
+  }
+  .satal4>*{
+    align-items: center;
+  }
+
